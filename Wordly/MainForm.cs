@@ -129,7 +129,12 @@
                 Application.DoEvents();
             }
 
+            // disable all textboxes in this guess
+            EnableGuessBoxes(false, guesses);
             guesses++;
+            EnableGuessBoxes(true, guesses);
+
+            // enmable all textboxes for the next guess
             Debug.WriteLine(guesses);
         }
 
@@ -141,6 +146,18 @@
                 clearTextBox = true;
                 this.SelectNextControl(currentContainer, false, true, false, false);
             };
+        }
+
+        private void EnableGuessBoxes(bool enable, int guessCount)
+        {
+            for (int i = 0; i <= 4; i++)
+            {
+                var guess = Controls.OfType<TextBox>()
+                    .Where(t => t.TabIndex == (guessCount * 5) + i)
+                    .Select(t => t)
+                    .First();
+                guess.Enabled = enable;
+            }
         }
 
         private bool ValidWord()

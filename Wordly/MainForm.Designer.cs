@@ -161,6 +161,7 @@
             // txtWord2Letter1
             // 
             this.txtWord2Letter1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord2Letter1.Enabled = false;
             this.txtWord2Letter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord2Letter1.Location = new System.Drawing.Point(172, 50);
             this.txtWord2Letter1.MaxLength = 1;
@@ -176,6 +177,7 @@
             // txtWord2Letter2
             // 
             this.txtWord2Letter2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord2Letter2.Enabled = false;
             this.txtWord2Letter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord2Letter2.Location = new System.Drawing.Point(132, 50);
             this.txtWord2Letter2.MaxLength = 1;
@@ -191,6 +193,7 @@
             // txtWord2Letter3
             // 
             this.txtWord2Letter3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord2Letter3.Enabled = false;
             this.txtWord2Letter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord2Letter3.Location = new System.Drawing.Point(92, 50);
             this.txtWord2Letter3.MaxLength = 1;
@@ -206,6 +209,7 @@
             // txtWord2Letter4
             // 
             this.txtWord2Letter4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord2Letter4.Enabled = false;
             this.txtWord2Letter4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord2Letter4.Location = new System.Drawing.Point(52, 50);
             this.txtWord2Letter4.MaxLength = 1;
@@ -221,6 +225,7 @@
             // txtWord2Letter5
             // 
             this.txtWord2Letter5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord2Letter5.Enabled = false;
             this.txtWord2Letter5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord2Letter5.Location = new System.Drawing.Point(12, 50);
             this.txtWord2Letter5.MaxLength = 1;
@@ -236,6 +241,7 @@
             // txtWord3Letter1
             // 
             this.txtWord3Letter1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord3Letter1.Enabled = false;
             this.txtWord3Letter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord3Letter1.Location = new System.Drawing.Point(172, 88);
             this.txtWord3Letter1.MaxLength = 1;
@@ -251,6 +257,7 @@
             // txtWord3Letter2
             // 
             this.txtWord3Letter2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord3Letter2.Enabled = false;
             this.txtWord3Letter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord3Letter2.Location = new System.Drawing.Point(132, 88);
             this.txtWord3Letter2.MaxLength = 1;
@@ -266,6 +273,7 @@
             // txtWord3Letter3
             // 
             this.txtWord3Letter3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord3Letter3.Enabled = false;
             this.txtWord3Letter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord3Letter3.Location = new System.Drawing.Point(92, 88);
             this.txtWord3Letter3.MaxLength = 1;
@@ -281,6 +289,7 @@
             // txtWord3Letter4
             // 
             this.txtWord3Letter4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord3Letter4.Enabled = false;
             this.txtWord3Letter4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord3Letter4.Location = new System.Drawing.Point(52, 88);
             this.txtWord3Letter4.MaxLength = 1;
@@ -296,6 +305,7 @@
             // txtWord3Letter5
             // 
             this.txtWord3Letter5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord3Letter5.Enabled = false;
             this.txtWord3Letter5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord3Letter5.Location = new System.Drawing.Point(12, 88);
             this.txtWord3Letter5.MaxLength = 1;
@@ -311,6 +321,7 @@
             // txtWord4Letter1
             // 
             this.txtWord4Letter1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord4Letter1.Enabled = false;
             this.txtWord4Letter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord4Letter1.Location = new System.Drawing.Point(172, 126);
             this.txtWord4Letter1.MaxLength = 1;
@@ -326,6 +337,7 @@
             // txtWord4Letter2
             // 
             this.txtWord4Letter2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord4Letter2.Enabled = false;
             this.txtWord4Letter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord4Letter2.Location = new System.Drawing.Point(132, 126);
             this.txtWord4Letter2.MaxLength = 1;
@@ -341,6 +353,7 @@
             // txtWord4Letter3
             // 
             this.txtWord4Letter3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord4Letter3.Enabled = false;
             this.txtWord4Letter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord4Letter3.Location = new System.Drawing.Point(92, 126);
             this.txtWord4Letter3.MaxLength = 1;
@@ -356,6 +369,7 @@
             // txtWord4Letter4
             // 
             this.txtWord4Letter4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord4Letter4.Enabled = false;
             this.txtWord4Letter4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord4Letter4.Location = new System.Drawing.Point(52, 126);
             this.txtWord4Letter4.MaxLength = 1;
@@ -371,6 +385,7 @@
             // txtWord4Letter5
             // 
             this.txtWord4Letter5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord4Letter5.Enabled = false;
             this.txtWord4Letter5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord4Letter5.Location = new System.Drawing.Point(12, 126);
             this.txtWord4Letter5.MaxLength = 1;
@@ -386,6 +401,7 @@
             // txtWord5Letter1
             // 
             this.txtWord5Letter1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord5Letter1.Enabled = false;
             this.txtWord5Letter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord5Letter1.Location = new System.Drawing.Point(172, 164);
             this.txtWord5Letter1.MaxLength = 1;
@@ -401,6 +417,7 @@
             // txtWord5Letter2
             // 
             this.txtWord5Letter2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord5Letter2.Enabled = false;
             this.txtWord5Letter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord5Letter2.Location = new System.Drawing.Point(132, 164);
             this.txtWord5Letter2.MaxLength = 1;
@@ -416,6 +433,7 @@
             // txtWord5Letter3
             // 
             this.txtWord5Letter3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord5Letter3.Enabled = false;
             this.txtWord5Letter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord5Letter3.Location = new System.Drawing.Point(92, 164);
             this.txtWord5Letter3.MaxLength = 1;
@@ -431,6 +449,7 @@
             // txtWord5Letter4
             // 
             this.txtWord5Letter4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord5Letter4.Enabled = false;
             this.txtWord5Letter4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord5Letter4.Location = new System.Drawing.Point(52, 164);
             this.txtWord5Letter4.MaxLength = 1;
@@ -446,6 +465,7 @@
             // txtWord5Letter5
             // 
             this.txtWord5Letter5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWord5Letter5.Enabled = false;
             this.txtWord5Letter5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWord5Letter5.Location = new System.Drawing.Point(12, 164);
             this.txtWord5Letter5.MaxLength = 1;
@@ -465,6 +485,7 @@
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(40, 40);
             this.btnA.TabIndex = 25;
+            this.btnA.TabStop = false;
             this.btnA.Text = "A";
             this.btnA.UseVisualStyleBackColor = true;
             this.btnA.Click += new System.EventHandler(this.btnLetter_Click);
@@ -476,6 +497,7 @@
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(40, 40);
             this.btnB.TabIndex = 26;
+            this.btnB.TabStop = false;
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
             this.btnB.Click += new System.EventHandler(this.btnLetter_Click);
@@ -487,6 +509,7 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(40, 40);
             this.btnC.TabIndex = 27;
+            this.btnC.TabStop = false;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
             this.btnC.Click += new System.EventHandler(this.btnLetter_Click);
@@ -498,6 +521,7 @@
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(40, 40);
             this.btnD.TabIndex = 28;
+            this.btnD.TabStop = false;
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
             this.btnD.Click += new System.EventHandler(this.btnLetter_Click);
@@ -509,6 +533,7 @@
             this.btnE.Name = "btnE";
             this.btnE.Size = new System.Drawing.Size(40, 40);
             this.btnE.TabIndex = 29;
+            this.btnE.TabStop = false;
             this.btnE.Text = "E";
             this.btnE.UseVisualStyleBackColor = true;
             this.btnE.Click += new System.EventHandler(this.btnLetter_Click);
@@ -520,6 +545,7 @@
             this.btnJ.Name = "btnJ";
             this.btnJ.Size = new System.Drawing.Size(40, 40);
             this.btnJ.TabIndex = 34;
+            this.btnJ.TabStop = false;
             this.btnJ.Text = "J";
             this.btnJ.UseVisualStyleBackColor = true;
             this.btnJ.Click += new System.EventHandler(this.btnLetter_Click);
@@ -531,6 +557,7 @@
             this.btnI.Name = "btnI";
             this.btnI.Size = new System.Drawing.Size(40, 40);
             this.btnI.TabIndex = 33;
+            this.btnI.TabStop = false;
             this.btnI.Text = "I";
             this.btnI.UseVisualStyleBackColor = true;
             this.btnI.Click += new System.EventHandler(this.btnLetter_Click);
@@ -542,6 +569,7 @@
             this.btnH.Name = "btnH";
             this.btnH.Size = new System.Drawing.Size(40, 40);
             this.btnH.TabIndex = 32;
+            this.btnH.TabStop = false;
             this.btnH.Text = "H";
             this.btnH.UseVisualStyleBackColor = true;
             this.btnH.Click += new System.EventHandler(this.btnLetter_Click);
@@ -553,6 +581,7 @@
             this.btnG.Name = "btnG";
             this.btnG.Size = new System.Drawing.Size(40, 40);
             this.btnG.TabIndex = 31;
+            this.btnG.TabStop = false;
             this.btnG.Text = "G";
             this.btnG.UseVisualStyleBackColor = true;
             this.btnG.Click += new System.EventHandler(this.btnLetter_Click);
@@ -564,6 +593,7 @@
             this.btnF.Name = "btnF";
             this.btnF.Size = new System.Drawing.Size(40, 40);
             this.btnF.TabIndex = 30;
+            this.btnF.TabStop = false;
             this.btnF.Text = "F";
             this.btnF.UseVisualStyleBackColor = true;
             this.btnF.Click += new System.EventHandler(this.btnLetter_Click);
@@ -575,6 +605,7 @@
             this.btnO.Name = "btnO";
             this.btnO.Size = new System.Drawing.Size(40, 40);
             this.btnO.TabIndex = 39;
+            this.btnO.TabStop = false;
             this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = true;
             this.btnO.Click += new System.EventHandler(this.btnLetter_Click);
@@ -586,6 +617,7 @@
             this.btnN.Name = "btnN";
             this.btnN.Size = new System.Drawing.Size(40, 40);
             this.btnN.TabIndex = 38;
+            this.btnN.TabStop = false;
             this.btnN.Text = "N";
             this.btnN.UseVisualStyleBackColor = true;
             this.btnN.Click += new System.EventHandler(this.btnLetter_Click);
@@ -597,6 +629,7 @@
             this.btnM.Name = "btnM";
             this.btnM.Size = new System.Drawing.Size(40, 40);
             this.btnM.TabIndex = 37;
+            this.btnM.TabStop = false;
             this.btnM.Text = "M";
             this.btnM.UseVisualStyleBackColor = true;
             this.btnM.Click += new System.EventHandler(this.btnLetter_Click);
@@ -608,6 +641,7 @@
             this.btnL.Name = "btnL";
             this.btnL.Size = new System.Drawing.Size(40, 40);
             this.btnL.TabIndex = 36;
+            this.btnL.TabStop = false;
             this.btnL.Text = "L";
             this.btnL.UseVisualStyleBackColor = true;
             this.btnL.Click += new System.EventHandler(this.btnLetter_Click);
@@ -619,6 +653,7 @@
             this.btnK.Name = "btnK";
             this.btnK.Size = new System.Drawing.Size(40, 40);
             this.btnK.TabIndex = 35;
+            this.btnK.TabStop = false;
             this.btnK.Text = "K";
             this.btnK.UseVisualStyleBackColor = true;
             this.btnK.Click += new System.EventHandler(this.btnLetter_Click);
@@ -630,6 +665,7 @@
             this.btnT.Name = "btnT";
             this.btnT.Size = new System.Drawing.Size(40, 40);
             this.btnT.TabIndex = 44;
+            this.btnT.TabStop = false;
             this.btnT.Text = "T";
             this.btnT.UseVisualStyleBackColor = true;
             this.btnT.Click += new System.EventHandler(this.btnLetter_Click);
@@ -641,6 +677,7 @@
             this.btnS.Name = "btnS";
             this.btnS.Size = new System.Drawing.Size(40, 40);
             this.btnS.TabIndex = 43;
+            this.btnS.TabStop = false;
             this.btnS.Text = "S";
             this.btnS.UseVisualStyleBackColor = true;
             this.btnS.Click += new System.EventHandler(this.btnLetter_Click);
@@ -652,6 +689,7 @@
             this.btnR.Name = "btnR";
             this.btnR.Size = new System.Drawing.Size(40, 40);
             this.btnR.TabIndex = 42;
+            this.btnR.TabStop = false;
             this.btnR.Text = "R";
             this.btnR.UseVisualStyleBackColor = true;
             this.btnR.Click += new System.EventHandler(this.btnLetter_Click);
@@ -663,6 +701,7 @@
             this.btnQ.Name = "btnQ";
             this.btnQ.Size = new System.Drawing.Size(40, 40);
             this.btnQ.TabIndex = 41;
+            this.btnQ.TabStop = false;
             this.btnQ.Text = "Q";
             this.btnQ.UseVisualStyleBackColor = true;
             this.btnQ.Click += new System.EventHandler(this.btnLetter_Click);
@@ -674,6 +713,7 @@
             this.btnP.Name = "btnP";
             this.btnP.Size = new System.Drawing.Size(40, 40);
             this.btnP.TabIndex = 40;
+            this.btnP.TabStop = false;
             this.btnP.Text = "P";
             this.btnP.UseVisualStyleBackColor = true;
             this.btnP.Click += new System.EventHandler(this.btnLetter_Click);
@@ -685,6 +725,7 @@
             this.btnY.Name = "btnY";
             this.btnY.Size = new System.Drawing.Size(40, 40);
             this.btnY.TabIndex = 49;
+            this.btnY.TabStop = false;
             this.btnY.Text = "Y";
             this.btnY.UseVisualStyleBackColor = true;
             this.btnY.Click += new System.EventHandler(this.btnLetter_Click);
@@ -696,6 +737,7 @@
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(40, 40);
             this.btnX.TabIndex = 48;
+            this.btnX.TabStop = false;
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = true;
             this.btnX.Click += new System.EventHandler(this.btnLetter_Click);
@@ -707,6 +749,7 @@
             this.btnW.Name = "btnW";
             this.btnW.Size = new System.Drawing.Size(40, 40);
             this.btnW.TabIndex = 47;
+            this.btnW.TabStop = false;
             this.btnW.Text = "W";
             this.btnW.UseVisualStyleBackColor = true;
             this.btnW.Click += new System.EventHandler(this.btnLetter_Click);
@@ -718,6 +761,7 @@
             this.btnV.Name = "btnV";
             this.btnV.Size = new System.Drawing.Size(40, 40);
             this.btnV.TabIndex = 46;
+            this.btnV.TabStop = false;
             this.btnV.Text = "V";
             this.btnV.UseVisualStyleBackColor = true;
             this.btnV.Click += new System.EventHandler(this.btnLetter_Click);
@@ -729,6 +773,7 @@
             this.btnU.Name = "btnU";
             this.btnU.Size = new System.Drawing.Size(40, 40);
             this.btnU.TabIndex = 45;
+            this.btnU.TabStop = false;
             this.btnU.Text = "U";
             this.btnU.UseVisualStyleBackColor = true;
             this.btnU.Click += new System.EventHandler(this.btnLetter_Click);
@@ -740,6 +785,7 @@
             this.btnZ.Name = "btnZ";
             this.btnZ.Size = new System.Drawing.Size(40, 40);
             this.btnZ.TabIndex = 50;
+            this.btnZ.TabStop = false;
             this.btnZ.Text = "Z";
             this.btnZ.UseVisualStyleBackColor = true;
             this.btnZ.Click += new System.EventHandler(this.btnLetter_Click);
@@ -752,6 +798,7 @@
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(80, 40);
             this.btnEnter.TabIndex = 51;
+            this.btnEnter.TabStop = false;
             this.btnEnter.Text = "ENTER";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
@@ -765,6 +812,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(80, 40);
             this.btnBack.TabIndex = 52;
+            this.btnBack.TabStop = false;
             this.btnBack.Text = "<";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
