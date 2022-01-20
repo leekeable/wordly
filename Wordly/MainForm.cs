@@ -16,8 +16,10 @@
     {
         private TextBox currentTextBox;
         private string word = string.Empty;
-        private int guesses = 0;
-        
+        private int guesses = 1;
+        private const int MaxGuesses = 6;
+        private const int LettersPerWord = 5;
+
         // hack to allow the backspace button to clear the text box
         private bool clearTextBox = false;
 
@@ -29,6 +31,7 @@
         {
             InitializeComponent();
 
+            LayoutControls();
             //Word1 = new TextBox[] { txtWord1Letter1, txtWord1Letter2, txtWord1Letter3, txtWord1Letter4, txtWord1Letter5 };
             //Word2 = new TextBox[] { txtWord2Letter1, txtWord2Letter2, txtWord2Letter3, txtWord2Letter4, txtWord2Letter5 };
             //Word3 = new TextBox[] { txtWord3Letter1, txtWord3Letter2, txtWord3Letter3, txtWord3Letter4, txtWord3Letter5 };
@@ -92,17 +95,11 @@
                 return;
             }
 
-            for (var i = 0; i <= 4; i++)
+            for (var i = 1; i <= LettersPerWord; i++)
             {
-                var guess = Controls.OfType<TextBox>()
-                    .Where(t => t.TabIndex == (guesses * 5) + i)
-                    .Select(t => t)
-                    .First();
-                var letter = word.Substring(i, 1).ToLower();
-                var button = Controls.OfType<Button>()
-                    .Where(t => t.Text.ToLower() == guess.Text.ToLower())
-                    .Select(t => t)
-                    .First();
+                var guess = GetTextBox(guesses, i);
+                var letter = word.Substring(i-1, 1).ToLower();
+                var button = GetButton(guess.Text);
 
                 // right letter right position
                 if (guess.Text.ToLower() == letter)
@@ -129,13 +126,35 @@
                 Application.DoEvents();
             }
 
+            // need to do something here if the guess is correct :-)
+
             // disable all textboxes in this guess
             EnableGuessBoxes(false, guesses);
+
             guesses++;
-            EnableGuessBoxes(true, guesses);
+
+            if (guesses <= MaxGuesses) EnableGuessBoxes(true, guesses);
 
             // enmable all textboxes for the next guess
             Debug.WriteLine(guesses);
+        }
+
+        private TextBox GetTextBox(int word, int letter)
+        {
+            var textBox = Controls.OfType<TextBox>()
+                .Where(t => t.Tag.ToString() == ($"{word}:{letter}"))
+                .Select(t => t)
+                .First();
+            return textBox;
+        }
+
+        private Button GetButton(string letter)
+        {
+            var button = Controls.OfType<Button>()
+                .Where(t => t.Text.ToLower() == letter.ToLower())
+                .Select(t => t)
+                .First();
+            return button;
         }
 
         private void txtGuess_KeyUp(object sender, KeyEventArgs e)
@@ -150,12 +169,9 @@
 
         private void EnableGuessBoxes(bool enable, int guessCount)
         {
-            for (int i = 0; i <= 4; i++)
+            for (int i = 1; i <= LettersPerWord; i++)
             {
-                var guess = Controls.OfType<TextBox>()
-                    .Where(t => t.TabIndex == (guessCount * 5) + i)
-                    .Select(t => t)
-                    .First();
+                var guess = GetTextBox(guessCount, i);
                 guess.Enabled = enable;
             }
         }
@@ -165,30 +181,21 @@
             var guessedWord = string.Empty;
 
             // build the word from the textboxes for this guess
-            for (var i = 0; i <= 4; i++)
+            for (var i = 1; i <= LettersPerWord; i++)
             {
-                var guess = Controls.OfType<TextBox>()
-                    .Where(t => t.TabIndex == (guesses * 5) + i)
-                    .Select(t => t)
-                    .First();
+                var guess = GetTextBox(guesses, i);
                 guessedWord += guess.Text.ToLower();
             }
 
             // if its not a valid word, clear the textboxes and move focus to the first one for this guess
             if (!words.Contains(guessedWord))
             {
-                for (var i = 0; i <= 4; i++)
+                for (var i = 1; i <= LettersPerWord; i++)
                 {
-                    var guess = Controls.OfType<TextBox>()
-                        .Where(t => t.TabIndex == (guesses * 5) + i)
-                        .Select(t => t)
-                        .First();
+                    var guess = GetTextBox(guesses, i);
                     guess.Text = string.Empty;
                 }
-                var firstletter = Controls.OfType<TextBox>()
-                    .Where(t => t.TabIndex == (guesses * 5))
-                    .Select(t => t)
-                    .First();
+                var firstletter = GetTextBox(guesses, 1);
                 firstletter.Focus();
 
                 return false;
@@ -207,6 +214,31 @@
             {
                 string result = reader.ReadToEnd();
                 return result;
+            }
+        }
+
+        private void LayoutControls()
+        {
+            for (int word = 1; word <= MaxGuesses; word++)
+            {
+                for (int letter = 2; letter < LettersPerWord; letter++)
+                {
+                    var a = GetTextBox(word, letter);
+                    var b = GetTextBox(word, letter + 1);
+
+                    b.Left = a.Left + a.Width;
+                }
+            }
+            for (int word = 2; word <= MaxGuesses; word++)
+            {
+                for (int letter = 1; letter <= LettersPerWord; letter++)
+                {
+                    var a = GetTextBox(word - 1, letter);
+
+                    var b = GetTextBox(word, letter);
+
+                    b.Top = a.Top + a.Height;
+                }
             }
         }
     }
