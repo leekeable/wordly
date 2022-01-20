@@ -44,9 +44,9 @@
 
             var jarray = (JArray)JsonConvert.DeserializeObject(dictionaryJson);
             words = jarray.ToObject<string[]>();
-            
+
             var random = new Random();
-            word = words[random.Next(words.Length-1)];
+            word = words[random.Next(words.Length - 1)];
             //this.Text = word;
         }
 
@@ -73,7 +73,7 @@
             if (clearTextBox == true)
             {
                 this.currentTextBox.Text = string.Empty;
-                clearTextBox = false;   
+                clearTextBox = false;
             }
         }
 
@@ -98,7 +98,7 @@
             for (var i = 1; i <= LettersPerWord; i++)
             {
                 var guess = GetTextBox(guesses, i);
-                var letter = word.Substring(i-1, 1).ToLower();
+                var letter = word.Substring(i - 1, 1).ToLower();
                 var button = GetButton(guess.Text);
 
                 // right letter right position
@@ -152,6 +152,15 @@
         {
             var button = Controls.OfType<Button>()
                 .Where(t => t.Text.ToLower() == letter.ToLower())
+                .Select(t => t)
+                .First();
+            return button;
+        }
+
+        private Button GetButton(int row, int column)
+        {
+            var button = Controls.OfType<Button>()
+                .Where(t => t.Tag.ToString() == ($"{row}:{column}"))
                 .Select(t => t)
                 .First();
             return button;
@@ -219,6 +228,7 @@
 
         private void LayoutControls()
         {
+            // layout textboxes
             for (int word = 1; word <= MaxGuesses; word++)
             {
                 for (int letter = 2; letter < LettersPerWord; letter++)
@@ -234,10 +244,56 @@
                 for (int letter = 1; letter <= LettersPerWord; letter++)
                 {
                     var a = GetTextBox(word - 1, letter);
-
                     var b = GetTextBox(word, letter);
 
                     b.Top = a.Top + a.Height;
+                }
+            }
+            // layout buttons
+            for (int row = 1; row <= 6; row++)
+            {
+                if (row < 6)
+                {
+                    for (int column = 2; column < 5; column++)
+                    {
+                        var a = GetButton(row, column);
+                        var b = GetButton(row, column + 1);
+
+                        b.Left = a.Left + a.Width;
+                    }
+                }
+                else
+                {
+                    for (int column = 2; column < 3; column++)
+                    {
+                        var a = GetButton(row, column);
+                        var b = GetButton(row, column + 1);
+
+                        b.Left = a.Left + a.Width;
+                    }
+                }
+            }
+            for (int row = 2; row <= 6; row++)
+            {
+                if (row < 6)
+                {
+                    for (int column = 1; column <= 5; column++)
+                    {
+                        var a = GetButton(row - 1, column);
+                        var b = GetButton(row, column);
+
+                        b.Top = a.Top + a.Height;
+                    }
+                }
+                else
+                {
+                    for (int column = 1; column <= 3; column++)
+                    {
+                        var a = GetButton(row - 1, column);
+                        var b = GetButton(row, column);
+
+                        b.Top = a.Top + a.Height;
+                    }
                 }
             }
         }

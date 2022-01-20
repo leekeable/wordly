@@ -517,6 +517,7 @@
             this.btnA.Size = new System.Drawing.Size(30, 32);
             this.btnA.TabIndex = 25;
             this.btnA.TabStop = false;
+            this.btnA.Tag = "1:1";
             this.btnA.Text = "A";
             this.btnA.UseVisualStyleBackColor = true;
             this.btnA.Click += new System.EventHandler(this.btnLetter_Click);
@@ -530,6 +531,7 @@
             this.btnB.Size = new System.Drawing.Size(30, 32);
             this.btnB.TabIndex = 26;
             this.btnB.TabStop = false;
+            this.btnB.Tag = "1:2";
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
             this.btnB.Click += new System.EventHandler(this.btnLetter_Click);
@@ -543,6 +545,7 @@
             this.btnC.Size = new System.Drawing.Size(30, 32);
             this.btnC.TabIndex = 27;
             this.btnC.TabStop = false;
+            this.btnC.Tag = "1:3";
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
             this.btnC.Click += new System.EventHandler(this.btnLetter_Click);
@@ -556,6 +559,7 @@
             this.btnD.Size = new System.Drawing.Size(30, 32);
             this.btnD.TabIndex = 28;
             this.btnD.TabStop = false;
+            this.btnD.Tag = "1:4";
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
             this.btnD.Click += new System.EventHandler(this.btnLetter_Click);
@@ -569,6 +573,7 @@
             this.btnE.Size = new System.Drawing.Size(30, 32);
             this.btnE.TabIndex = 29;
             this.btnE.TabStop = false;
+            this.btnE.Tag = "1:5";
             this.btnE.Text = "E";
             this.btnE.UseVisualStyleBackColor = true;
             this.btnE.Click += new System.EventHandler(this.btnLetter_Click);
@@ -582,6 +587,7 @@
             this.btnJ.Size = new System.Drawing.Size(30, 32);
             this.btnJ.TabIndex = 34;
             this.btnJ.TabStop = false;
+            this.btnJ.Tag = "2:5";
             this.btnJ.Text = "J";
             this.btnJ.UseVisualStyleBackColor = true;
             this.btnJ.Click += new System.EventHandler(this.btnLetter_Click);
@@ -595,6 +601,7 @@
             this.btnI.Size = new System.Drawing.Size(30, 32);
             this.btnI.TabIndex = 33;
             this.btnI.TabStop = false;
+            this.btnI.Tag = "2:4";
             this.btnI.Text = "I";
             this.btnI.UseVisualStyleBackColor = true;
             this.btnI.Click += new System.EventHandler(this.btnLetter_Click);
@@ -608,6 +615,7 @@
             this.btnH.Size = new System.Drawing.Size(30, 32);
             this.btnH.TabIndex = 32;
             this.btnH.TabStop = false;
+            this.btnH.Tag = "2:3";
             this.btnH.Text = "H";
             this.btnH.UseVisualStyleBackColor = true;
             this.btnH.Click += new System.EventHandler(this.btnLetter_Click);
@@ -621,6 +629,7 @@
             this.btnG.Size = new System.Drawing.Size(30, 32);
             this.btnG.TabIndex = 31;
             this.btnG.TabStop = false;
+            this.btnG.Tag = "2:2";
             this.btnG.Text = "G";
             this.btnG.UseVisualStyleBackColor = true;
             this.btnG.Click += new System.EventHandler(this.btnLetter_Click);
@@ -634,6 +643,7 @@
             this.btnF.Size = new System.Drawing.Size(30, 32);
             this.btnF.TabIndex = 30;
             this.btnF.TabStop = false;
+            this.btnF.Tag = "2:1";
             this.btnF.Text = "F";
             this.btnF.UseVisualStyleBackColor = true;
             this.btnF.Click += new System.EventHandler(this.btnLetter_Click);
@@ -647,6 +657,7 @@
             this.btnO.Size = new System.Drawing.Size(30, 32);
             this.btnO.TabIndex = 39;
             this.btnO.TabStop = false;
+            this.btnO.Tag = "3:5";
             this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = true;
             this.btnO.Click += new System.EventHandler(this.btnLetter_Click);
@@ -660,6 +671,7 @@
             this.btnN.Size = new System.Drawing.Size(30, 32);
             this.btnN.TabIndex = 38;
             this.btnN.TabStop = false;
+            this.btnN.Tag = "3:4";
             this.btnN.Text = "N";
             this.btnN.UseVisualStyleBackColor = true;
             this.btnN.Click += new System.EventHandler(this.btnLetter_Click);
@@ -673,6 +685,7 @@
             this.btnM.Size = new System.Drawing.Size(30, 32);
             this.btnM.TabIndex = 37;
             this.btnM.TabStop = false;
+            this.btnM.Tag = "3:3";
             this.btnM.Text = "M";
             this.btnM.UseVisualStyleBackColor = true;
             this.btnM.Click += new System.EventHandler(this.btnLetter_Click);
@@ -686,6 +699,7 @@
             this.btnL.Size = new System.Drawing.Size(30, 32);
             this.btnL.TabIndex = 36;
             this.btnL.TabStop = false;
+            this.btnL.Tag = "3:2";
             this.btnL.Text = "L";
             this.btnL.UseVisualStyleBackColor = true;
             this.btnL.Click += new System.EventHandler(this.btnLetter_Click);
@@ -699,6 +713,7 @@
             this.btnK.Size = new System.Drawing.Size(30, 32);
             this.btnK.TabIndex = 35;
             this.btnK.TabStop = false;
+            this.btnK.Tag = "3:1";
             this.btnK.Text = "K";
             this.btnK.UseVisualStyleBackColor = true;
             this.btnK.Click += new System.EventHandler(this.btnLetter_Click);
@@ -712,6 +727,7 @@
             this.btnT.Size = new System.Drawing.Size(30, 32);
             this.btnT.TabIndex = 44;
             this.btnT.TabStop = false;
+            this.btnT.Tag = "4:5";
             this.btnT.Text = "T";
             this.btnT.UseVisualStyleBackColor = true;
             this.btnT.Click += new System.EventHandler(this.btnLetter_Click);
@@ -725,6 +741,7 @@
             this.btnS.Size = new System.Drawing.Size(30, 32);
             this.btnS.TabIndex = 43;
             this.btnS.TabStop = false;
+            this.btnS.Tag = "4:4";
             this.btnS.Text = "S";
             this.btnS.UseVisualStyleBackColor = true;
             this.btnS.Click += new System.EventHandler(this.btnLetter_Click);
@@ -738,6 +755,7 @@
             this.btnR.Size = new System.Drawing.Size(30, 32);
             this.btnR.TabIndex = 42;
             this.btnR.TabStop = false;
+            this.btnR.Tag = "4:3";
             this.btnR.Text = "R";
             this.btnR.UseVisualStyleBackColor = true;
             this.btnR.Click += new System.EventHandler(this.btnLetter_Click);
@@ -751,6 +769,7 @@
             this.btnQ.Size = new System.Drawing.Size(30, 32);
             this.btnQ.TabIndex = 41;
             this.btnQ.TabStop = false;
+            this.btnQ.Tag = "4:2";
             this.btnQ.Text = "Q";
             this.btnQ.UseVisualStyleBackColor = true;
             this.btnQ.Click += new System.EventHandler(this.btnLetter_Click);
@@ -764,6 +783,7 @@
             this.btnP.Size = new System.Drawing.Size(30, 32);
             this.btnP.TabIndex = 40;
             this.btnP.TabStop = false;
+            this.btnP.Tag = "4:1";
             this.btnP.Text = "P";
             this.btnP.UseVisualStyleBackColor = true;
             this.btnP.Click += new System.EventHandler(this.btnLetter_Click);
@@ -777,6 +797,7 @@
             this.btnY.Size = new System.Drawing.Size(30, 32);
             this.btnY.TabIndex = 49;
             this.btnY.TabStop = false;
+            this.btnY.Tag = "5:5";
             this.btnY.Text = "Y";
             this.btnY.UseVisualStyleBackColor = true;
             this.btnY.Click += new System.EventHandler(this.btnLetter_Click);
@@ -790,6 +811,7 @@
             this.btnX.Size = new System.Drawing.Size(30, 32);
             this.btnX.TabIndex = 48;
             this.btnX.TabStop = false;
+            this.btnX.Tag = "5:4";
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = true;
             this.btnX.Click += new System.EventHandler(this.btnLetter_Click);
@@ -803,6 +825,7 @@
             this.btnW.Size = new System.Drawing.Size(30, 32);
             this.btnW.TabIndex = 47;
             this.btnW.TabStop = false;
+            this.btnW.Tag = "5:3";
             this.btnW.Text = "W";
             this.btnW.UseVisualStyleBackColor = true;
             this.btnW.Click += new System.EventHandler(this.btnLetter_Click);
@@ -816,6 +839,7 @@
             this.btnV.Size = new System.Drawing.Size(30, 32);
             this.btnV.TabIndex = 46;
             this.btnV.TabStop = false;
+            this.btnV.Tag = "5:2";
             this.btnV.Text = "V";
             this.btnV.UseVisualStyleBackColor = true;
             this.btnV.Click += new System.EventHandler(this.btnLetter_Click);
@@ -829,6 +853,7 @@
             this.btnU.Size = new System.Drawing.Size(30, 32);
             this.btnU.TabIndex = 45;
             this.btnU.TabStop = false;
+            this.btnU.Tag = "5:1";
             this.btnU.Text = "U";
             this.btnU.UseVisualStyleBackColor = true;
             this.btnU.Click += new System.EventHandler(this.btnLetter_Click);
@@ -842,6 +867,7 @@
             this.btnZ.Size = new System.Drawing.Size(30, 32);
             this.btnZ.TabIndex = 50;
             this.btnZ.TabStop = false;
+            this.btnZ.Tag = "6:2";
             this.btnZ.Text = "Z";
             this.btnZ.UseVisualStyleBackColor = true;
             this.btnZ.Click += new System.EventHandler(this.btnLetter_Click);
@@ -855,6 +881,7 @@
             this.btnEnter.Size = new System.Drawing.Size(60, 32);
             this.btnEnter.TabIndex = 51;
             this.btnEnter.TabStop = false;
+            this.btnEnter.Tag = "6:3";
             this.btnEnter.Text = "ENTER";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
@@ -869,6 +896,7 @@
             this.btnBack.Size = new System.Drawing.Size(60, 32);
             this.btnBack.TabIndex = 52;
             this.btnBack.TabStop = false;
+            this.btnBack.Tag = "6:1";
             this.btnBack.Text = "<";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
