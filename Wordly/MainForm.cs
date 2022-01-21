@@ -95,6 +95,8 @@
                 return;
             }
 
+            // all 5 boxes for this guess got a letter in?
+
             for (var i = 1; i <= LettersPerWord; i++)
             {
                 var guess = GetTextBox(guesses, i);
@@ -111,6 +113,7 @@
                 // right letter wrong position
                 else if (word.Contains(guess.Text.ToLower()))
                 {
+                    // already orange? maybe guess includes multiple same letters?
                     guess.BackColor = Color.Orange;
                     guess.ForeColor = Color.Black;
                     button.BackColor = Color.Orange;
@@ -120,23 +123,24 @@
                     guess.BackColor = Color.DarkViolet;
                     guess.ForeColor = Color.White;
                     button.BackColor = Color.DarkViolet;
+                    button.Enabled = false;
                 }
                 guess.Enabled = false;
                 Thread.Sleep(500);
                 Application.DoEvents();
             }
 
-            // need to do something here if the guess is correct :-)
-
             // disable all textboxes in this guess
             EnableGuessBoxes(false, guesses);
 
             guesses++;
 
+            // enmable all textboxes for the next guess
             if (guesses <= MaxGuesses) EnableGuessBoxes(true, guesses);
 
-            // enmable all textboxes for the next guess
-            Debug.WriteLine(guesses);
+            // need to do something here if the guess is correct :-)
+
+
         }
 
         private TextBox GetTextBox(int word, int letter)
