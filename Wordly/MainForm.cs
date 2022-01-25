@@ -4,7 +4,6 @@
     using Newtonsoft.Json.Linq;
     using System;
     using System.Data;
-    using System.Diagnostics;
     using System.Drawing;
     using System.IO;
     using System.Linq;
@@ -53,6 +52,7 @@
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.currentTextBox = txtWord1Letter1;
+            this.currentTextBox.Focus();    
         }
 
         private void btnLetter_Click(object sender, EventArgs e)
@@ -89,13 +89,14 @@
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
+            // all 5 boxes for this guess got a letter in?
+
+            // is it a valid word
             if (!ValidWord())
             {
                 MessageBox.Show(this, "Invalid word", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            // all 5 boxes for this guess got a letter in?
 
             for (var i = 1; i <= LettersPerWord; i++)
             {
@@ -138,15 +139,14 @@
             // enmable all textboxes for the next guess
             if (guesses <= MaxGuesses) EnableGuessBoxes(true, guesses);
 
-            // need to do something here if the guess is correct :-)
-
+            // need to do something here if the guess is correct, a bit like solitaire :-)
 
         }
 
-        private TextBox GetTextBox(int word, int letter)
+        private TextBox GetTextBox(int row, int column)
         {
             var textBox = Controls.OfType<TextBox>()
-                .Where(t => t.Tag.ToString() == ($"{word}:{letter}"))
+                .Where(t => t.Tag.ToString() == ($"{row}:{column}"))
                 .Select(t => t)
                 .First();
             return textBox;
